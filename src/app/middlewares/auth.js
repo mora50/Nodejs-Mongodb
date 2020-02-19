@@ -7,9 +7,6 @@ modules.exports = (req, res, next) => {
   if (!authHeader) {
     return res.status(401).json({ error: 'Token not provided' })
   }
-
-  Authorization: Bearer TOKEN
-
   const [, token] = authHeader.split('')
 
   try {
@@ -19,4 +16,4 @@ modules.exports = (req, res, next) => {
   } catch (err) {
 
   }
-}
+} 
