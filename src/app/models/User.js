@@ -45,7 +45,6 @@ UserSchema.statics = {
       expiresIn: authConfig.ttl
     })
   }
-
 }
 
 module.exports = mongoose.model('User', UserSchema)
